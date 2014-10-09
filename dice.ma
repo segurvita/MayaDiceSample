@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: dice.ma
-//Last modified: Thu, Oct 09, 2014 11:45:31 AM
+//Last modified: Thu, Oct 09, 2014 11:48:13 AM
 //Codeset: 932
 requires maya "2015";
 requires -nodeType "ilrOptionsNode" -nodeType "ilrUIOptionsNode" -nodeType "ilrBakeLayerManager"
@@ -13,12 +13,12 @@ fileInfo "cutIdentifier" "201405190330-916664";
 fileInfo "osv" "Microsoft Windows 7 Business Edition, 64-bit Windows 7 Service Pack 1 (Build 7601)\n";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -3.1572014232263603 1.5907782405858368 2.1697979188125838 ;
-	setAttr ".r" -type "double3" -7.5383527296272632 -393.3999999999881 0 ;
+	setAttr ".t" -type "double3" -2.115789187756969 2.9329698230303256 4.3241547197206751 ;
+	setAttr ".r" -type "double3" -25.538352729656424 -17.799999999989378 -2.505348568462405e-015 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 2.8468996361487138;
+	setAttr ".coi" 5.565693619775228;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -113,11 +113,11 @@ createNode mesh -n "pCubeShape2" -p "pCube2";
 	setAttr ".vif" yes;
 	setAttr ".pv" -type "double2" 1.9972387676724677 0.49994108343825627 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0.26060066 0.67182291
-		 0.26060066 0.33922163 0.50043786 0.67182291 0.50043786 0.33922163 0.99602759 0.3392216
-		 0.74588066 0.33922163 0.26060066 0.99394089 0.7458806 0.010801442 0.010560036 0.99394089
-		 0.010560036 0.67182291 0.99602759 0.010801442 0.74588066 0.67182291 0.50043786 0.010801442
-		 0.50043786 0.99394089;
+	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0.25412577 0.67270887
+		 0.25412574 0.33654758 0.49653021 0.67270899 0.49653015 0.33654749 0.9974246 0.33654749
+		 0.74460018 0.33654758 0.25412589 0.99827498 0.74459994 0.0046120286 0.0014086962
+		 0.99827486 0.0014086366 0.67270899 0.99742466 0.0046119243 0.74460006 0.67270899
+		 0.49653006 0.0046119243 0.49653018 0.99827486;
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
